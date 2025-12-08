@@ -12,6 +12,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
 import CustomCursor from './components/CustomCursor'
+import CursorTrail from './components/CursorTrail'
 
 import { Toaster } from 'react-hot-toast'
 
@@ -25,6 +26,7 @@ export default function App() {
     <div className="bg-slate-950 text-slate-300 font-outfit">
       <Toaster position="top-center" reverseOrder={false} />
       <CustomCursor />
+      <CursorTrail />
       <ScrollProgress />
       <div className="max-w-6xl mx-auto px-4">
         <Navbar />

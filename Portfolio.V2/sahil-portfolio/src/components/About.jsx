@@ -1,54 +1,107 @@
 import { useEffect } from 'react'
 import AOS from 'aos'
-import { FaReact, FaPython, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaNodeJs } from 'react-icons/fa'
-import { SiTailwindcss, SiFirebase, SiFigma, SiNextdotjs } from 'react-icons/si'
 
 export default function About() {
     useEffect(() => {
         AOS.init()
     }, [])
 
-    const skills = [
-        { name: 'React', icon: <FaReact className="text-cyan-400" /> },
-        { name: 'Next.js', icon: <SiNextdotjs className="text-white" /> },
-        { name: 'Tailwind', icon: <SiTailwindcss className="text-cyan-400" /> },
-        { name: 'JavaScript', icon: <FaJs className="text-yellow-400" /> },
-        { name: 'Python', icon: <FaPython className="text-blue-400" /> },
-        { name: 'Node.js', icon: <FaNodeJs className="text-green-500" /> },
-        { name: 'HTML5', icon: <FaHtml5 className="text-orange-500" /> },
-        { name: 'CSS3', icon: <FaCss3Alt className="text-blue-500" /> },
-        { name: 'Git', icon: <FaGitAlt className="text-red-500" /> },
-        { name: 'Firebase', icon: <SiFirebase className="text-yellow-500" /> },
-        { name: 'Figma', icon: <SiFigma className="text-purple-500" /> },
+    const experiences = [
+        {
+            role: 'IT Technical Support',
+            company: 'F1Soft International Pvt. Ltd',
+            period: '2021 March',
+            description: [
+                'Provided Level 1/2 technical support for hardware, software, networks, and user devices.',
+                'Diagnosed and resolved issues involving desktops, laptops, printers, mobile devices, and peripherals.',
+                'Troubleshot connectivity problems related to TCP/IP, DNS, DHCP, and Wi-Fi network access.',
+                'Supported Microsoft 365 applications including Outlook, Teams, SharePoint, and OneDrive.'
+            ],
+            skills: ['Technical Support', 'Networking (TCP/IP, DNS, DHCP)', 'Hardware Troubleshooting', 'Microsoft 365', 'Windows']
+        },
+        {
+            role: 'Customer Service Attendant',
+            company: 'Tasty Fish Market',
+            period: '2022 August',
+            description: [
+                'Delivered friendly and efficient service to customers in a fast-paced environment.',
+                'Handled cash and EFTPOS transactions accurately using POS systems.',
+                'Assisted with stock rotation, restocking, and maintaining cleanliness according to food safety standards.'
+            ],
+            skills: ['Customer Service', 'Cash Handling', 'Inventory Management', 'Food Safety']
+        },
+        {
+            role: 'Sales Consultant',
+            company: 'Koala Living',
+            period: '2022 Sep - Present',
+            description: [
+                'Consistently exceeding monthly targets through expert client consultation and tailored home design solutions.',
+                'Operated ERP and POS systems to manage stock levels, process transactions, and coordinate logistics.',
+                'Managed customer inquiries, complaints, and follow-ups, ensuring customer satisfaction and retention.'
+            ],
+            skills: ['Sales', 'Client Consultation', 'ERP Systems', 'Logistics', 'CRM']
+        },
+        {
+            role: 'Team Leader',
+            company: 'Canberra Southern Cross Club',
+            period: '2022 August - Present',
+            description: [
+                'Led shifts, managing a team to ensure smooth service and efficient operations.',
+                'Coordinated with kitchen staff to keep service flowing and update on food and drink availability.',
+                'Trained new staff members in best practices and service standards.',
+                'Managed bar services and supported coworkers with tech-related queries, such as EFTPOS connectivity and system resets.'
+            ],
+            skills: ['Leadership', 'Operations Management', 'Training', 'POS Systems', 'Technical Support']
+        }
     ]
 
     return (
         <section id="about" className="py-20 bg-slate-950">
             <div className="container mx-auto px-4">
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-up">About Me</h2>
 
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div data-aos="fade-right">
-                            <p className="text-lg text-slate-300 leading-relaxed mb-6">
-                                Hi, I'm <span className="font-bold text-cyan-400">Sahil Shrestha</span> — a recent Software Engineering graduate with a passion for building intelligent, user-centric web applications.
-                            </p>
-                            <p className="text-lg text-slate-300 leading-relaxed">
-                                I specialize in <span className="font-semibold text-white">React, Next.js, and AI integration</span>. My journey involves turning complex problems into simple, beautiful, and functional digital experiences. When I'm not coding, I'm exploring the latest in AI or designing UI prototypes.
-                            </p>
+                    <div className="grid lg:grid-cols-2 gap-12 items-start">
+                        <div className="space-y-6 lg:sticky lg:top-24">
+                            <div data-aos="fade-right">
+                                <p className="text-lg text-slate-300 leading-relaxed">
+                                    Hi, I'm <span className="font-bold text-cyan-400">Sahil Shrestha</span> — a recent Software Engineering graduate with a passion for building intelligent, user-centric web applications.
+                                </p>
+                                <p className="text-lg text-slate-300 leading-relaxed mt-6">
+                                    I specialize in <span className="font-semibold text-white">React, Next.js, and AI integration</span>. My journey involves turning complex problems into simple, beautiful, and functional digital experiences. When I'm not coding, I'm exploring the latest in AI or designing UI prototypes.
+                                </p>
+                            </div>
                         </div>
 
-                        <div data-aos="fade-left" className="bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-lg shadow-cyan-500/5">
-                            <h3 className="text-2xl font-bold mb-6 text-white">Tech Stack</h3>
-                            <div className="grid grid-cols-4 gap-6">
-                                {skills.map((skill) => (
-                                    <div key={skill.name} className="flex flex-col items-center group">
-                                        <div className="text-4xl mb-2 transform transition-transform group-hover:scale-110 duration-300">
-                                            {skill.icon}
+                        <div data-aos="fade-left" className="space-y-8">
+                            <h3 className="text-2xl font-bold text-white mb-6">Professional Experience</h3>
+                            <div className="space-y-8">
+                                {experiences.map((exp, index) => (
+                                    <div key={index} className="relative pl-8 border-l-2 border-slate-800 hover:border-cyan-400 transition-colors duration-300">
+                                        <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-950 border-2 border-slate-600 group-hover:border-cyan-400 transition-colors duration-300"></div>
+
+                                        <div className="mb-2">
+                                            <h4 className="text-xl font-bold text-white">{exp.role}</h4>
+                                            <div className="flex flex-wrap gap-2 items-center mt-1">
+                                                <span className="text-cyan-400 font-medium">{exp.company}</span>
+                                                <span className="text-slate-500 text-sm">•</span>
+                                                <span className="text-slate-400 text-sm">{exp.period}</span>
+                                            </div>
                                         </div>
-                                        <span className="text-sm text-slate-400 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                            {skill.name}
-                                        </span>
+
+                                        <ul className="list-disc list-outside ml-4 mb-4 space-y-1 text-slate-300 text-sm">
+                                            {exp.description.map((item, i) => (
+                                                <li key={i}>{item}</li>
+                                            ))}
+                                        </ul>
+
+                                        <div className="flex flex-wrap gap-2">
+                                            {exp.skills.map((skill, i) => (
+                                                <span key={i} className="px-2 py-1 text-xs font-medium text-cyan-300 bg-cyan-900/20 rounded-full border border-cyan-900/50">
+                                                    {skill}
+                                                </span>
+                                            ))}
+                                        </div>
                                     </div>
                                 ))}
                             </div>

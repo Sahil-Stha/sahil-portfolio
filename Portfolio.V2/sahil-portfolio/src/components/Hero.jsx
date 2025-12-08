@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import AOS from 'aos'
 import { TypeAnimation } from 'react-type-animation'
 import ParticleBackground from './ParticleBackground'
-import GlitchText from './GlitchText'
 
 export default function Hero() {
     useEffect(() => {
@@ -32,8 +31,8 @@ export default function Hero() {
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-                        Hi, I'm <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                            <GlitchText text="Sahil Shrestha" />
+                        Hi, I'm <span className="text-cyan-400">
+                            Sahil Shrestha
                         </span>
                         <span className="inline-block animate-wave ml-2">👋</span>
                     </h1>
