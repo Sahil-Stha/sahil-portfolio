@@ -10,6 +10,13 @@ export default function Projects() {
 
     const projects = [
         {
+            title: 'Support Flow',
+            description: 'A full-stack customer support ticketing system featuring real-time notifications, AI-powered responses, and comprehensive analytics.',
+            tech: ['React', 'Node.js', 'PostgreSQL', 'Prisma', 'Tailwind'],
+            image: '/assets/SupportFlow.png',
+            link: 'https://github.com/Sahil-Stha/SupportFlow'
+        },
+        {
             title: 'Crypto Price Prediction',
             description: 'A machine learning project using ARIMA and LSTM models to predict cryptocurrency prices with high accuracy.',
             tech: ['Python', 'TensorFlow', 'Pandas', 'Matplotlib'],
