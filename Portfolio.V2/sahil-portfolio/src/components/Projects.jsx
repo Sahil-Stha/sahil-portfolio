@@ -21,7 +21,7 @@ export default function Projects() {
             description: 'A comprehensive fitness tracking application designed with a focus on user experience and real-time data visualization.',
             tech: ['Figma', 'React', 'Firebase', 'Tailwind'],
             image: '/assets/Fitness.jpg',
-            link: '#'
+            link: null
         }
     ]
 
@@ -79,9 +79,11 @@ export default function Projects() {
                                             ))}
                                         </div>
 
-                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-block text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
-                                            View Project →
-                                        </a>
+                                        {project.link && (
+                                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-block text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                                                View Project →
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
                             </Tilt>

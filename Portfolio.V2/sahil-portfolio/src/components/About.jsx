@@ -1,16 +1,11 @@
-import { useEffect } from 'react'
-import AOS from 'aos'
-
 export default function About() {
-    useEffect(() => {
-        AOS.init()
-    }, [])
+
 
     const experiences = [
         {
             role: 'IT Technical Support',
             company: 'F1Soft International Pvt. Ltd',
-            period: '2021 March',
+            period: '2022 Feb - 2022 April',
             description: [
                 'Provided Level 1/2 technical support for hardware, software, networks, and user devices.',
                 'Diagnosed and resolved issues involving desktops, laptops, printers, mobile devices, and peripherals.',
@@ -59,11 +54,11 @@ export default function About() {
         <section id="about" className="py-20 bg-slate-950">
             <div className="container mx-auto px-4">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-up">About Me</h2>
+                    <h2 className="text-4xl font-bold text-center mb-12 text-white">About Me</h2>
 
                     <div className="grid lg:grid-cols-2 gap-12 items-start">
                         <div className="space-y-6 lg:sticky lg:top-24">
-                            <div data-aos="fade-right">
+                            <div>
                                 <p className="text-lg text-slate-300 leading-relaxed">
                                     Hi, I'm <span className="font-bold text-cyan-400">Sahil Shrestha</span> — a recent Software Engineering graduate with a passion for building intelligent, user-centric web applications.
                                 </p>
@@ -73,7 +68,7 @@ export default function About() {
                             </div>
                         </div>
 
-                        <div data-aos="fade-left" className="space-y-8">
+                        <div className="space-y-8">
                             <h3 className="text-2xl font-bold text-white mb-6">Professional Experience</h3>
                             <div className="space-y-8">
                                 {experiences.map((exp, index) => (
