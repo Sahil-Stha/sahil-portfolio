@@ -14,7 +14,7 @@ export default function Projects() {
             description: 'A full-stack customer support ticketing system featuring real-time notifications, AI-powered responses, and comprehensive analytics.',
             tech: ['React', 'Node.js', 'PostgreSQL', 'Prisma', 'Tailwind'],
             image: '/assets/SupportFlow.png',
-            link: 'https://github.com/Sahil-Stha/SupportFlow'
+            link: 'https://supportflo.vercel.app'
         },
         {
             title: 'Crypto Price Prediction',
