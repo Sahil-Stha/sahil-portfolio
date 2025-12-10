@@ -63,7 +63,7 @@ export default function About() {
                                     Hi, I'm <span className="font-bold text-cyan-400">Sahil Shrestha</span> — a recent Software Engineering graduate with a passion for building intelligent, user-centric web applications.
                                 </p>
                                 <p className="text-lg text-slate-300 leading-relaxed mt-6">
-                                    I specialize in <span className="font-semibold text-white">React, Next.js, and AI integration</span>. My journey involves turning complex problems into simple, beautiful, and functional digital experiences. When I'm not coding, I'm exploring the latest in AI or designing UI prototypes.
+                                    I'm a problem-solver with hands-on IT support experience and growing skills in data analysis and infrastructure. I combine technical capability with calm communication, delivering real-world solutions across enterprise and education settings.
                                 </p>
                             </div>
                         </div>

@@ -42,7 +42,7 @@ export default function Hero() {
                             sequence={[
                                 'Software Engineer',
                                 2000,
-                                'Full Stack Developer',
+                                'Self-Starter',
                                 2000,
                                 'Problem Solver',
                                 2000,
