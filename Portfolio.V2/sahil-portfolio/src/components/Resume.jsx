@@ -16,7 +16,7 @@ export default function Resume() {
                     </p>
 
                     <a
-                        href="https://raw.githubusercontent.com/Sahil-Stha/Portfolio-Materials/main/Sahil_Resume.pdf"
+                        href="https://raw.githubusercontent.com/Sahil-Stha/Portfolio-Materials/main/Resume_3.0.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-700 transition-all shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transform hover:-translate-y-1"
