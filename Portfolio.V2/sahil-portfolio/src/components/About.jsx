@@ -2,18 +2,7 @@ export default function About() {
 
 
     const experiences = [
-        {
-            role: 'IT Technical Support',
-            company: 'F1Soft International Pvt. Ltd',
-            period: '2022 Feb - 2022 April',
-            description: [
-                'Provided Level 1/2 technical support for hardware, software, networks, and user devices.',
-                'Diagnosed and resolved issues involving desktops, laptops, printers, mobile devices, and peripherals.',
-                'Troubleshot connectivity problems related to TCP/IP, DNS, DHCP, and Wi-Fi network access.',
-                'Supported Microsoft 365 applications including Outlook, Teams, SharePoint, and OneDrive.'
-            ],
-            skills: ['Technical Support', 'Networking (TCP/IP, DNS, DHCP)', 'Hardware Troubleshooting', 'Microsoft 365', 'Windows']
-        },
+
         {
             role: 'Customer Service Attendant',
             company: 'Tasty Fish Market',

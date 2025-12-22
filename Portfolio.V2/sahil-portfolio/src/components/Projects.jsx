@@ -14,7 +14,8 @@ export default function Projects() {
             description: 'A full-stack customer support ticketing system featuring real-time notifications, AI-powered responses, and comprehensive analytics.',
             tech: ['React', 'Node.js', 'PostgreSQL', 'Prisma', 'Tailwind'],
             image: '/assets/SupportFlow.png',
-            link: 'https://supportflo.vercel.app'
+            link: 'https://supportflo.vercel.app',
+            note: 'Made with Anti Gravity'
         },
         {
             title: 'Crypto Price Prediction',
@@ -75,7 +76,12 @@ export default function Projects() {
                                     </div>
 
                                     <div className="p-8">
-                                        <h3 className="text-2xl font-bold mb-3 text-white">{project.title}</h3>
+                                        <div className="mb-3">
+                                            <h3 className="text-2xl font-bold text-white">{project.title}</h3>
+                                            {project.note && (
+                                                <p className="text-xs text-cyan-400 font-medium italic mt-1">{project.note}</p>
+                                            )}
+                                        </div>
                                         <p className="text-slate-400 mb-6 leading-relaxed">{project.description}</p>
 
                                         <div className="flex flex-wrap gap-2 mb-6">
