@@ -2,28 +2,18 @@ export default function About() {
 
 
     const experiences = [
-
         {
-            role: 'Customer Service Attendant',
-            company: 'Tasty Fish Market',
-            period: '2022 August',
+            role: 'Sales Consultant & Customer Service',
+            company: 'Telstra',
+            period: '2026 February - Present',
             description: [
-                'Delivered friendly and efficient service to customers in a fast-paced environment.',
-                'Handled cash and EFTPOS transactions accurately using POS systems.',
-                'Assisted with stock rotation, restocking, and maintaining cleanliness according to food safety standards.'
+                'Advise customers on mobile, broadband, and technology plans and devices, matching solutions to their needs and budget.',
+                'Process sales, service changes, and activations accurately using in-store systems while explaining contracts and inclusions clearly.',
+                'Resolve account and service enquiries in person and over the phone, escalating complex technical issues with clear handover notes.',
+                'Support troubleshooting for common connectivity and device setup issues, following Telstra processes and compliance standards.',
+                'Contribute to team sales targets through consultative selling, add-ons, and follow-up on customer satisfaction.'
             ],
-            skills: ['Customer Service', 'Cash Handling', 'Inventory Management', 'Food Safety']
-        },
-        {
-            role: 'Sales Consultant',
-            company: 'Koala Living',
-            period: '2022 Sep - Present',
-            description: [
-                'Consistently exceeding monthly targets through expert client consultation and tailored home design solutions.',
-                'Operated ERP and POS systems to manage stock levels, process transactions, and coordinate logistics.',
-                'Managed customer inquiries, complaints, and follow-ups, ensuring customer satisfaction and retention.'
-            ],
-            skills: ['Sales', 'Client Consultation', 'ERP Systems', 'Logistics', 'CRM']
+            skills: ['Telecom Sales', 'Customer Service', 'Consultative Selling', 'POS & Billing Systems', 'Product Knowledge']
         },
         {
             role: 'Team Leader',
@@ -36,6 +26,17 @@ export default function About() {
                 'Managed bar services and supported coworkers with tech-related queries, such as EFTPOS connectivity and system resets.'
             ],
             skills: ['Leadership', 'Operations Management', 'Training', 'POS Systems', 'Technical Support']
+        },
+        {
+            role: 'Sales Consultant',
+            company: 'Koala Living',
+            period: '2022 Sep - Present',
+            description: [
+                'Consistently exceeding monthly targets through expert client consultation and tailored home design solutions.',
+                'Operated ERP and POS systems to manage stock levels, process transactions, and coordinate logistics.',
+                'Managed customer inquiries, complaints, and follow-ups, ensuring customer satisfaction and retention.'
+            ],
+            skills: ['Sales', 'Client Consultation', 'ERP Systems', 'Logistics', 'CRM']
         }
     ]
 

@@ -24,7 +24,7 @@ export default function Hero() {
                 <div className="max-w-4xl mx-auto text-center" data-aos="fade-up">
                     <div className="mb-8">
                         <img
-                            src="/assets/Avatar_Image.jpeg"
+                            src="/assets/Profile_Pic.PNG"
                             alt="Sahil Shrestha"
                             className="w-64 h-64 rounded-2xl mx-auto border-4 border-cyan-500/20 shadow-xl shadow-cyan-500/10 object-cover"
                         />
