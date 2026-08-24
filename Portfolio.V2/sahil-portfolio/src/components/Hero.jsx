@@ -26,7 +26,7 @@ export default function Hero() {
                         <img
                             src="/assets/Profile_Pic.PNG"
                             alt="Sahil Shrestha"
-                            className="w-64 h-64 rounded-2xl mx-auto border-4 border-cyan-500/20 shadow-xl shadow-cyan-500/10 object-cover"
+                            className="w-72 md:w-80 h-96 rounded-3xl mx-auto border-4 border-cyan-500/20 shadow-xl shadow-cyan-500/10 object-cover"
                         />
                     </div>
 

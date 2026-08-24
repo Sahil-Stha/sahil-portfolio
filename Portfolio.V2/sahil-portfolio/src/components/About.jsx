@@ -3,6 +3,18 @@ export default function About() {
 
     const experiences = [
         {
+            role: 'Digital Engineer Intern',
+            company: 'Crea8ive',
+            period: 'Internship',
+            description: [
+                'Created a functional webform allowing users to submit their details for an event.',
+                'Fixed styling issues and visual misalignments on an ongoing website build using browser developer tools.',
+                'Designed and built a website using Webflow, translating an initial design from Canva into a functional site.',
+                'Replicated a page and its associated sub-content, successfully migrating it from a staging environment to a live website.'
+            ],
+            skills: ['Web Development', 'UX', 'HTML & CSS', 'Debugging', 'Responsive Design', 'Web Design', 'Webflow', 'WordPress']
+        },
+        {
             role: 'Sales Consultant & Customer Service',
             company: 'Telstra',
             period: '2026 February - Present',
